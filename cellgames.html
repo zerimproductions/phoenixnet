@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoenixNet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="phoenixLogo.png">
+    <style>
+        /* Reset e configurações base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #4ECDC4;
+            --secondary-color: #44A08D;
+            --accent-color: #FF6B6B;
+            --dark-bg: #2C3E50;
+            --light-bg: #ECF0F1;
+            --text-dark: #2C3E50;
+            --text-light: #FFFFFF;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --shadow-medium: rgba(0, 0, 0, 0.2);
+            --shadow-heavy: rgba(0, 0, 0, 0.3);
+            --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            --gradient-accent: linear-gradient(135deg, var(--accent-color), #FF8E53);
+            --gradient-dark: linear-gradient(135deg, #2C3E50, #34495E);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--gradient-dark);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-shadow: 2px 2px 4px var(--shadow-heavy);
+            letter-spacing: -1px;
+        }
+
+        .header-decoration {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 4rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px var(--shadow-medium);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Device Grid */
+        .device-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .device-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 30px var(--shadow-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .device-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px var(--shadow-medium);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .card-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .select-btn {
+            background: var(--gradient-accent);
+            color: var(--text-light);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .select-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .select-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .select-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gradient-dark);
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-content p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 1.5rem 0;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .logo-icon {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 2rem 1rem;
+            }
+            
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .device-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .device-card {
+                padding: 2rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .device-card {
+                padding: 1.5rem;
+            }
+            
+            .select-btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <i class="fas fa-gamepad logo-icon"></i>
+                <h1 class="logo">Catálogo de Jogos</h1>
+            </div>
+            <div class="header-decoration"></div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="intro-section">
+                    <h2 class="main-title">Jogos para Celular</h2>
+                    <p class="subtitle">Uma seleção de jogos incríveis para seu dispositivo móvel</p>
+                </div>
+
+                <div class="device-grid">
+                    <!-- Jogo 1 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Ben 10 - Hero Time</h3>
+                        <p class="card-description">A HISTÓRIA COMEÇOU COM UM RELÓGIO ESQUISITO</p>
+                        <a href="https://gamejolt.com/games/b10herotime/578793" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 2 -->
+                    <div class="device-card">
+                        <h3 class="card-title">SuperMarket Simulator V1</h3>
+                        <p class="card-description">não é o original, mas é uma cópia muito bem feita e viciante</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.kosingames.storemanagersimulator&hl=pt_BR&gl=US" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 3 -->
+                    <div class="device-card">
+                        <h3 class="card-title">SuperMarket Simulator V2</h3>
+                        <p class="card-description">outro desse, caso não gostem do anterior, esse se parece mais ainda com o original</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.dmg.supermarket.simulator&hl=pt_BR&gl=US" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 4 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Políticos Meme Kombat</h3>
+                        <p class="card-description">Mortal kombat de políticos brasileiros</p>
+                        <a href="https://play.google.com/store/apps/details?id=br.com.tretastudio&hl=pt_BR&gl=US" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 5 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Reactors</h3>
+                        <p class="card-description">crie uma usina elétrica</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.rsgapps.reactor&hl=pt_BR&gl=US" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 6 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Minecraft PE 1.21.0.26</h3>
+                        <p class="card-description">Pocket edition Unlocked</p>
+                        <a href="https://happymod.com/minecraft-pocket-edition-apps-025-9-mod/com.mojang.minecraftpe/" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 7 -->
+                    <div class="device-card">
+                        <h3 class="card-title">GTA SanAndreas</h3>
+                        <p class="card-description">PAPAPAPAPAPAPAPAPAPAPAPAPAPAPA</p>
+                        <a href="https://happymod.com/grand-theft-auto-san-andreas-apk-app-mod/com.rockstargames.gtasa/th" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 8 -->
+                    <div class="device-card">
+                        <h3 class="card-title">One piece Bouty Rush</h3>
+                        <p class="card-description">GOMU GOMU NOOOOOOO... JOGO BOOOOOOOOOOOOOM</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.bandainamcoent.opbrww&hl=pt_BR&gl=US" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 9 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Melon SandBox</h3>
+                        <p class="card-description">Tipo People Playground, muito gore, muito líquido vermelho e várias armas e construções diferentes</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.studio27.MelonPlayground&hl=pt_BR&gl=US" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 10 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Hollow Knight</h3>
+                        <p class="card-description">SIM, VOCÊ <b>MOBILE</b>!!! VOCÊ PODE SIM JOGAR HOLLOW KNGIHT NA SUA BATATA!!!</p>
+                        <a href="https://apkpure.com/br/hollow-knight/com.TeamCherry.HollowKnight" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Jogo 11 -->
+                    <div class="device-card">
+                        <h3 class="card-title">Hollow Knight: SilkSong</h3>
+                        <p class="card-description">SIM GENTE, TEM PRA CELULAR JÁ HAHAHAHAHAHA</p>
+                        <a href="https://www.mediafire.com/file/454rflk7nx9hvsj/silksong.apk/file?dkey=n0icjg6h8ee&r=1446&dkey=454rflk7nx9hvsj" class="select-btn" target="_blank">
+                            <span>Baixar</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 PhoenixNet. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="template_jogos">
+<!--
+
+        <div class="device-card">
+            <h3 class="card-title">Nome do Jogo</h3>
+            <p class="card-description">Descrição do jogo</p>
+            <a href="Link do Jogo" class="select-btn" target="_blank">
+                <span>Baixar</span>
+                <i class="fas fa-download"></i>
+            </a>
+        </div>
+
+-->
+    </div>
+</body>
+</html>
+
