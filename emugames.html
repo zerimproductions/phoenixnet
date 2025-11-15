@@ -1,18 +1,248 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhoenixNet</title>
-    <link rel="stylesheet" href="stylegames.css">
+    <title>PhoenixNet - Jogos para Emulador</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="phoenixLogo.png">
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+
+        :root{
+            --primary-color:#4ECDC4;
+            --secondary-color:#44A08D;
+            --accent-color:#FF6B6B;
+            --dark-bg:#2C3E50;
+            --light-bg:#ECF0F1;
+            --text-dark:#2C3E50;
+            --text-light:#FFFFFF;
+            --shadow-light:rgba(0,0,0,0.1);
+            --shadow-medium:rgba(0,0,0,0.2);
+            --shadow-heavy:rgba(0,0,0,0.3);
+            --gradient-primary:linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+            --gradient-accent:linear-gradient(135deg,var(--accent-color),#FF8E53);
+            --gradient-dark:linear-gradient(135deg,#2C3E50,#34495E);
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+            color:white;
+            min-height:100vh;
+        }
+
+        .header{
+            background:var(--gradient-dark);
+            padding:2rem 0;
+            text-align:center;
+            position:relative;
+        }
+        .header-decoration{
+            height:4px;
+            background:var(--gradient-primary);
+            width:100%;
+            position:absolute;
+            bottom:0;
+            left:0;
+        }
+        .logo{
+            font-size:3rem;
+            font-weight:700;
+            text-shadow:2px 2px 4px var(--shadow-heavy);
+        }
+
+        .main-content{
+            padding:3rem 2rem;
+            display:flex;
+            justify-content:center;
+        }
+
+        .content-wrapper{
+            width:100%;
+            max-width:1200px;
+        }
+
+        .intro-section{
+            text-align:center;
+            margin-bottom:3rem;
+        }
+
+        .main-title{
+            font-size:2.5rem;
+            font-weight:600;
+            text-shadow:2px 2px 4px var(--shadow-medium);
+        }
+
+        .subtitle{
+            font-size:1.1rem;
+            opacity:0.9;
+        }
+
+        .device-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:2rem;
+        }
+
+        .device-card{
+            background:rgba(255,255,255,0.95);
+            padding:2rem;
+            border-radius:20px;
+            color:var(--text-dark);
+            text-align:center;
+            box-shadow:0 10px 30px var(--shadow-light);
+            transition:0.3s;
+        }
+
+        .device-card:hover{
+            transform:translateY(-10px) scale(1.02);
+            box-shadow:0 20px 40px var(--shadow-medium);
+        }
+
+        .select-btn{
+            background:var(--gradient-accent);
+            padding:1rem 2rem;
+            border-radius:50px;
+            border:none;
+            color:white;
+            font-weight:600;
+            display:inline-flex;
+            align-items:center;
+            gap:.5rem;
+            text-decoration:none;
+            margin-top:1rem;
+            box-shadow:0 4px 15px rgba(255,107,107,0.3);
+        }
+
+        .footer{
+            background:var(--gradient-dark);
+            padding:2rem;
+            text-align:center;
+        }
+
+        .footer p{
+            opacity:0.7;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 id="soon"><u>Em Breve</u></h1>
-    <!----------------------------------------->
-        <div class="container">
-            <a href="index.html" class="voltar">◄ Voltar</a>
+    <header class="header">
+        <h1 class="logo"><i class="fas fa-gamepad"></i> Jogos para Emuladores</h1>
+        <div class="header-decoration"></div>
+    </header>
+
+    <main class="main-content">
+        <div class="content-wrapper">
+
+            <div class="intro-section">
+                <h2 class="main-title">Catálogo de ROMs e ISOs</h2>
+                <p class="subtitle">Seleção com alguns dos melhores jogos para diversos emuladores</p>
+            </div>
+
+            <div class="device-grid">
+
+                <!-- Jogo 1 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Super Mario World (SNES)</h3>
+                    <a href="https://romspure.cc/roms/snes/super-mario-world/" class="select-btn" target="_blank">
+                        <span>Baixar ROM</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 2 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Sonic Advance 3 (GBA)</h3>
+                    <a href="https://romspure.cc/roms/gba/sonic-advance-3/" class="select-btn" target="_blank">
+                        <span>Baixar ROM</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 3 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Pokémon FireRed (GBA)</h3>
+                    <a href="https://romspure.cc/roms/gba/pokemon-firered/" class="select-btn" target="_blank">
+                        <span>Baixar ROM</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 4 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Mario Kart DS (Nintendo DS)</h3>
+                    <a href="https://romspure.cc/roms/nintendo-ds/mario-kart-ds/" class="select-btn" target="_blank">
+                        <span>Baixar ROM</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 5 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Dragon Ball Z - Budokai Tenkaichi 3 (PS2)</h3>
+                    <a href="https://romspure.cc/roms/ps2/dragon-ball-z-budokai-tenkaichi-3/" class="select-btn" target="_blank">
+                        <span>Baixar ISO</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 6 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">God of War II (PS2)</h3>
+                    <a href="https://romspure.cc/roms/ps2/god-of-war-ii/" class="select-btn" target="_blank">
+                        <span>Baixar ISO</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 7 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Naruto Shippuden Ultimate Ninja Impact (PSP)</h3>
+                    <a href="https://romspure.cc/roms/psp/naruto-shippuden-ultimate-ninja-impact/" class="select-btn" target="_blank">
+                        <span>Baixar ISO</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 8 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('https://imgs.search.brave.com/ccRBoClLabEjbEXMAzc_eEZbd_-OeNVBvwvcfMqQyXo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNjIw/ODU2OS5qcGc ')"></div>
+                    <h3 class="card-title">God of War: Chains of Olympus (PSP)</h3>
+                    <a href="https://romspure.cc/roms/psp/god-of-war-chains-of-olympus/" class="select-btn" target="_blank">
+                        <span>Baixar ISO</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 9 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">Super Smash Bros. Melee (GameCube)</h3>
+                    <a href="https://romspure.cc/roms/gamecube/super-smash-bros-melee/" class="select-btn" target="_blank">
+                        <span>Baixar ISO</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <!-- Jogo 10 -->
+                <div class="device-card">
+                    <div class="game-image" style="background-image: url('Imagem do jogo')"></div>
+                    <h3 class="card-title">The Legend of Zelda: Ocarina of Time (N64)</h3>
+                    <a href="https://romspure.cc/roms/n64/the-legend-of-zelda-ocarina-of-time/" class="select-btn" target="_blank">
+                        <span>Baixar ROM</span><i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-    <!----------------------------------------->
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 PhoenixNet. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>

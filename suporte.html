@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+</nav>
+</header>
+
+
+<section class="suporte-form">
+<h2>Entre em Contato</h2>
+<form action="https://formsubmit.co/zerimproductions@gmail.com" method="POST">
+
+
+<label>Nome:</label>
+<input type="text" name="nome" required>
+
+
+<label>Email:</label>
+<input type="email" name="email" required>
+
+
+<label>Motivo do Contato:</label>
+<input type="text" name="motivo" required>
+
+
+<label>Explicação:</label>
+<textarea name="explicacao" required></textarea>
+
+
+<label>Observação (opcional):</label>
+<textarea name="observacao"></textarea>
+
+
+<!-- Configurações adicionais do FormSubmit -->
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="box">
+
+
+<button type="submit" class="enviar-btn">Enviar</button>
+</form>
+</section>
+<style>
+.suporte-form {
+width: 90%;
+max-width: 500px;
+margin: 30px auto;
+padding: 20px;
+background: white;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+input, textarea {
+width: 100%;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+.enviar-btn {
+background: #4caf50;
+padding: 10px;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+.enviar-btn:hover {
+background: #43a047;
+}
+</style>

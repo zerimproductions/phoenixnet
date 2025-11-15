@@ -467,6 +467,26 @@ body {
 .direitos{
     text-align: center;
 }
+.support-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gradient-primary);
+    color: var(--text-light);
+    padding: 0.8rem 1.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px var(--shadow-medium);
+    transition: all 0.3s ease;
+}
+
+.support-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow-heavy);
+    color: white;
+}
 </style>
 <body>
     <div class="container">
@@ -517,10 +537,12 @@ body {
                             <i class="fas fa-gamepad"></i>
                         </div>
                         <h3 class="card-title">Emulador</h3>
-                        <!-- <button class="select-btn" onclick="selectDevice('emulator')"> -->
-                            <span>Sem Acesso</span>
+                        <a href="emugames.html">
+                        <button class="select-btn" onclick="selectDevice('emulator')">
+                            <span>Selecionar</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
+                        </a>
                     </div>
                 </div>
 
@@ -542,6 +564,9 @@ body {
         <footer class="footer">
             <div class="footer-content">
                 <p>&copy; 2025 PhoenixNet. Todos os direitos reservados.</p>
+                <a href="suporte.html" class="support-btn">
+                    <i class="fas fa-headset"></i> Suporte
+                </a>
 
             </div>
         </footer>
