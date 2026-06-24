@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -242,7 +243,8 @@
 
         .game-image {
             width: 100%;
-            height: 180px; /* Altura fixa para as imagens */
+            height: 180px;
+            /* Altura fixa para as imagens */
             background-size: cover;
             background-position: center;
             border-radius: 10px;
@@ -255,6 +257,10 @@
             font-weight: 600;
             color: var(--text-dark);
             margin-bottom: 1rem;
+        }
+
+        .error{
+            color: red !important;
         }
 
         .card-description {
@@ -346,36 +352,36 @@
             .header {
                 padding: 1.5rem 0;
             }
-            
+
             .logo {
                 font-size: 2rem;
             }
-            
+
             .logo-icon {
                 font-size: 2rem;
             }
-            
+
             .main-content {
                 padding: 2rem 1rem;
             }
-            
+
             .main-title {
                 font-size: 2rem;
             }
-            
+
             .subtitle {
                 font-size: 1rem;
             }
-            
+
             .device-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-            
+
             .device-card {
                 padding: 2rem;
             }
-            
+
             .footer-content {
                 flex-direction: column;
                 text-align: center;
@@ -386,7 +392,7 @@
             .device-card {
                 padding: 1.5rem;
             }
-            
+
             .select-btn {
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
@@ -394,6 +400,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- Header -->
@@ -402,7 +409,7 @@
                 <i class="fas fa-desktop logo-icon"></i>
                 <h1 class="logo">Catálogo de Jogos</h1>
             </div>
-            
+
             <!-- Search Container -->
             <div class="search-container">
                 <div class="search-box">
@@ -413,7 +420,7 @@
                     </button>
                 </div>
             </div>
-            
+
             <div class="header-decoration"></div>
         </header>
 
@@ -437,11 +444,16 @@
 
                 <div class="device-grid" id="gamesGrid">
                     <!-- Jogo 1 -->
-                    <div class="device-card" data-title="People Playground" data-description="bem educativo e bom para desestressar #confia">
-                        <div class="game-image" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1118200/header.jpg?t=1717246983')"></div>
+                    <div class="device-card" data-title="People Playground"
+                        data-description="bem educativo e bom para desestressar #confia">
+                        <div class="game-image"
+                            style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1118200/header.jpg?t=1717246983')">
+                        </div>
                         <h3 class="card-title">People Playground</h3>
                         <p class="card-description">bem educativo e bom para desestressar <b>#confia</b></p>
-                        <a target="_blank" href="https://www.mediafire.com/file/rksi68jlpzxv9ze/People.Playground.v1.22.Beta.3.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/rksi68jlpzxv9ze/People.Playground.v1.22.Beta.3.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -449,10 +461,13 @@
 
                     <!-- Jogo 2 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://cdn1.epicgames.com/offer/4c00c7506c4b4fa695f749bd6bb07ff6/Landscape_2560x1440-6358e00645e12a49f3793f2c60f767f9')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://cdn1.epicgames.com/offer/4c00c7506c4b4fa695f749bd6bb07ff6/Landscape_2560x1440-6358e00645e12a49f3793f2c60f767f9')">
+                        </div>
                         <h3 class="card-title">The Stanley Parable</h3>
                         <p class="card-description">ESTÃO ME OBSERVANDO? <b>EU SEI QUE ESTÃO!!!</b></p>
-                        <a target="_blank" href="https://www.mediafire.com/file/gy1dn066cts24o7/TheStanleyParable.zip" class="select-btn">
+                        <a target="_blank" href="https://www.mediafire.com/file/gy1dn066cts24o7/TheStanleyParable.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -460,10 +475,15 @@
 
                     <!-- Jogo 3 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://www.macgamestore.com/images_boxshots/352x198/call-of-duty-deluxe-edition-1548944093.jpg')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://www.macgamestore.com/images_boxshots/352x198/call-of-duty-deluxe-edition-1548944093.jpg')">
+                        </div>
                         <h3 class="card-title">Call Of Duty Deluxe</h3>
-                        <p class="card-description">Se você quiser perder a voz de tanto gritar e xingar... este é um exelente jogo pra você :D</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/gg01gsb9gi77zjh/CallofDutyDeluxeEdition.zip" class="select-btn">
+                        <p class="card-description">Se você quiser perder a voz de tanto gritar e xingar... este é um
+                            exelente jogo pra você :D</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/gg01gsb9gi77zjh/CallofDutyDeluxeEdition.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -471,10 +491,14 @@
 
                     <!-- Jogo 4 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg?t=1742986399')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1966720/capsule_616x353.jpg?t=1742986399')">
+                        </div>
                         <h3 class="card-title">Lethal Company</h3>
                         <p class="card-description">Amigos + Call = <strong>CAOS!!!</strong></p>
-                        <a target="_blank" href="https://www.mediafire.com/file/x7xbluk2lrzi9m1/Lethal.Company.v45.2.Multiplayer.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/x7xbluk2lrzi9m1/Lethal.Company.v45.2.Multiplayer.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -482,10 +506,14 @@
 
                     <!-- Jogo 5 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2027330/220b5f2e712771f9ad6e143ef5c4f4804533669f/capsule_616x353.jpg?t=1734826638')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2027330/220b5f2e712771f9ad6e143ef5c4f4804533669f/capsule_616x353.jpg?t=1734826638')">
+                        </div>
                         <h3 class="card-title">GoreBox</h3>
                         <p class="card-description">Outro joguin bem educativo :D</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/4zqz8qeg240ekyi/GoreBox+v1.15.1.5+v2.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/4zqz8qeg240ekyi/GoreBox+v1.15.1.5+v2.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -493,10 +521,14 @@
 
                     <!-- Jogo 6 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2558700/header.jpg?t=1740212457')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2558700/header.jpg?t=1740212457')">
+                        </div>
                         <h3 class="card-title">The BackRooms Deluxe</h3>
                         <p class="card-description">viu o giga chad lá dentro? O_o</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/8c3t2yp3udp0gyg/The+Backrooms+Deluxe.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/8c3t2yp3udp0gyg/The+Backrooms+Deluxe.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -504,10 +536,13 @@
 
                     <!-- Jogo 7 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011')">
+                        </div>
                         <h3 class="card-title">Raft Survival</h3>
                         <p class="card-description">tubarão, te amo, falcão, te amo...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/susyhzfjmqt526z/Raft.zip" class="select-btn">
+                        <a target="_blank" href="https://www.mediafire.com/file/susyhzfjmqt526z/Raft.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -515,10 +550,14 @@
 
                     <!-- Jogo 8 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/capsule_616x353.jpg?t=1745368462')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/capsule_616x353.jpg?t=1745368462')">
+                        </div>
                         <h3 class="card-title">HalfLife</h3>
                         <p class="card-description">"Como resumir Half Life?" é simples! <b>ABSOLUTE CINEMA!!!</b></p>
-                        <a target="_blank" href="https://www.mediafire.com/file/klx3bcuhrheajw9/Half.Life.2.Complete.Edition.v20220829-P2P.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/klx3bcuhrheajw9/Half.Life.2.Complete.Edition.v20220829-P2P.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -526,10 +565,14 @@
 
                     <!-- Jogo 9 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBeW2rtMG-UeEal4dNmwCthOEFi_DGb7LEBw&s')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBeW2rtMG-UeEal4dNmwCthOEFi_DGb7LEBw&s')">
+                        </div>
                         <h3 class="card-title">SuperLiminal</h3>
                         <p class="card-description">buguei...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/ehmzwhk9pbjnfy3/Superliminal.v20230219-GoldBerg.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/ehmzwhk9pbjnfy3/Superliminal.v20230219-GoldBerg.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -537,10 +580,14 @@
 
                     <!-- Jogo 10 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/240720/header.jpg?t=1666987027')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/240720/header.jpg?t=1666987027')">
+                        </div>
                         <h3 class="card-title">Getting Over It</h3>
                         <p class="card-description">irrita... mas vale a penas :3</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/0g0su7d9d638i4t/Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/0g0su7d9d638i4t/Getting.Over.It.with.Bennett.Foddy.Build.7976204.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -548,10 +595,14 @@
 
                     <!-- Jogo 11 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1532910/capsule_616x353.jpg?t=1743684080')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1532910/capsule_616x353.jpg?t=1743684080')">
+                        </div>
                         <h3 class="card-title">SuperMarket Simulator</h3>
                         <p class="card-description">mercadin do Seu Zé 😎👍</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/m1qerruyw18d4h9/Supermarket+Simulator.zip" class="select-btn">
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/m1qerruyw18d4h9/Supermarket+Simulator.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -559,9 +610,12 @@
 
                     <!-- Jogo 12 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://pbs.twimg.com/media/Fwf84MHWIAE5YgN.jpg:large')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://pbs.twimg.com/media/Fwf84MHWIAE5YgN.jpg:large')">
+                        </div>
                         <h3 class="card-title">Ben 10 - Hero Time</h3>
-                        <p class="card-description">A história começou quando um muleke esquisito... pera... acho que não era assim :P</p>
+                        <p class="card-description">A história começou quando um muleke esquisito... pera... acho que
+                            não era assim :P</p>
                         <a target="_blank" href="https://gamejolt.com/games/b10herotime/578793" class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
@@ -570,10 +624,14 @@
 
                     <!-- Jogo 13 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/230290/header.jpg?t=1745448523')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/230290/header.jpg?t=1745448523')">
+                        </div>
                         <h3 class="card-title">Universe Sandbox</h3>
-                        <p class="card-description">Vamos fazer o que Goku Black não conseguiu fazer... Neste jogo é claro! :3</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/luqxn5sbjtto9g3/Universe+Sandbox+2.zip" class="select-btn">
+                        <p class="card-description">Vamos fazer o que Goku Black não conseguiu fazer... Neste jogo é
+                            claro! :3</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/luqxn5sbjtto9g3/Universe+Sandbox+2.zip"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -581,9 +639,12 @@
 
                     <!-- Jogo 14 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1736937068')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg?t=1736937068')">
+                        </div>
                         <h3 class="card-title">Garry's Mod</h3>
-                        <p class="card-description"><b>Jogo abre:</b> "Que jogo legal!" <b>2 segundos depois:</b> "OHH MY PCIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"</p>
+                        <p class="card-description"><b>Jogo abre:</b> "Que jogo legal!" <b>2 segundos depois:</b> "OHH
+                            MY PCIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"</p>
                         <a target="_blank" href="https://www.mediafire.com/file/bovmqfidydcd1d9" class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
@@ -592,10 +653,15 @@
 
                     <!-- Jogo 15 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51')">
+                        </div>
+                        <h3 class="card-title error">MAL FUNCIONAMENTO</h3>
                         <h3 class="card-title">Hollow Knight</h3>
-                        <p class="card-description">Isso aqui é a própria representação de <b>relacionamento tóxico</b>, o jogo te odeia e você ama ele...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/ztmp6slqbsvh8um/Hollow+Knight.zip/file" class="select-btn">
+                        <p class="card-description">Isso aqui é a própria representação de <b>relacionamento tóxico</b>,
+                            o jogo te odeia e você ama ele...</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/ztmp6slqbsvh8um/Hollow+Knight.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -603,10 +669,15 @@
 
                     <!-- Jogo 16 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://images.gog-statics.com/bc4ca88f79ded16afa3a7fe9a1446c3a1780785bfb57b1e3b744624ff635902b_product_card_v2_mobile_slider_639.jpg')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://images.gog-statics.com/bc4ca88f79ded16afa3a7fe9a1446c3a1780785bfb57b1e3b744624ff635902b_product_card_v2_mobile_slider_639.jpg')">
+                        </div>
                         <h3 class="card-title">Hollow Knight: SilkSong</h3>
-                        <p class="card-description">Cara, o jogo foi pirateado <b>15 MINUTOS</b> APÓS O LANÇAMENTO, os cara são brabo :O</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/qayn9mtlwrw7nir/Hollow+Knight+Silksong.zip/file" class="select-btn">
+                        <p class="card-description">Cara, o jogo foi pirateado <b>15 MINUTOS</b> APÓS O LANÇAMENTO, os
+                            cara são brabo :O</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/qayn9mtlwrw7nir/Hollow+Knight+Silksong.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -614,10 +685,14 @@
 
                     <!-- Jogo 17 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/dZ9BY_ZzOGJafxwk8ikifnlU8pMS6MJXC3Q6IFef2X0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjcy/MzQ4OS5qcGc')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/dZ9BY_ZzOGJafxwk8ikifnlU8pMS6MJXC3Q6IFef2X0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjcy/MzQ4OS5qcGc')">
+                        </div>
                         <h3 class="card-title">The Joy Of Creation</h3>
-                        <p class="card-description">Você está na pele do criador, vivendo os pesadelos que ele mesmo criou... SÓ 5 MINUTOS DESSE JOGO JÁ SÃO MELHORES QUE OS 2 FILMES JUNTOS!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/g98gyk2kf20ibpr/TJOC.zip/file" class="select-btn">
+                        <p class="card-description">Você está na pele do criador, vivendo os pesadelos que ele mesmo
+                            criou... SÓ 5 MINUTOS DESSE JOGO JÁ SÃO MELHORES QUE OS 2 FILMES JUNTOS!!!</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/g98gyk2kf20ibpr/TJOC.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -625,10 +700,15 @@
 
                     <!-- Jogo 18 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/1/13/Baldis_Basics_in_Education_and_Learining_cover_art.webp')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/en/1/13/Baldis_Basics_in_Education_and_Learining_cover_art.webp')">
+                        </div>
                         <h3 class="card-title">Baldi's Basics</h3>
-                        <p class="card-description">MANO, EU NÃO CONSIGO PASSAR NEM DO 4º LIVRO, COMO TEM GENTE QUE ZERA ISSO??? ;----;</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/igiqh3xd0176kfq/BALDI_1.4.3_Windows_64Bit.zip/file" class="select-btn">
+                        <p class="card-description">MANO, EU NÃO CONSIGO PASSAR NEM DO 4º LIVRO, COMO TEM GENTE QUE ZERA
+                            ISSO??? ;----;</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/igiqh3xd0176kfq/BALDI_1.4.3_Windows_64Bit.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -636,10 +716,14 @@
 
                     <!-- Jogo 19 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe')">
+                        </div>
                         <h3 class="card-title">Cuphead</h3>
-                        <p class="card-description">MANO, é sério, quem conseguiu passar daquele Gênio lá deveria ganhar um prêmio!!! O BIXIN QUE SABE SER CHATO VIU, PELO AMOR DE DEUS!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/r7jv7rjennd6fvx/cuphead.rar/file" class="select-btn">
+                        <p class="card-description">MANO, é sério, quem conseguiu passar daquele Gênio lá deveria ganhar
+                            um prêmio!!! O BIXIN QUE SABE SER CHATO VIU, PELO AMOR DE DEUS!!!</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/r7jv7rjennd6fvx/cuphead.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -647,10 +731,14 @@
 
                     <!-- Jogo 20 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000009921/44bea8c565db26c0c470a6325a47c9ea031633945cb91e4b5e1b1a39b01a2cdb')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000009921/44bea8c565db26c0c470a6325a47c9ea031633945cb91e4b5e1b1a39b01a2cdb')">
+                        </div>
                         <h3 class="card-title">Undertale</h3>
-                        <p class="card-description">O único jogo que eu me recuso a completar um dos finais por causa dos personagens...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/f8u1s502jdcmcbi/Undertale.zip/file" class="select-btn">
+                        <p class="card-description">O único jogo que eu me recuso a completar um dos finais por causa
+                            dos personagens...</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/f8u1s502jdcmcbi/Undertale.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -658,10 +746,14 @@
 
                     <!-- Jogo 21 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1754692865')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1754692865')">
+                        </div>
                         <h3 class="card-title">Stardew Valley</h3>
-                        <p class="card-description">Cara, Grow a Garden tentou fazer o que esse jogo fez ANOS ATRÁS e conseguiu falhar VERGONHOSAMENTE KAKAKAKAKAKKAKAKAK</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/mcvwllxy1rbh0bl/Stardew+Valley.rar/file" class="select-btn">
+                        <p class="card-description">Cara, Grow a Garden tentou fazer o que esse jogo fez ANOS ATRÁS e
+                            conseguiu falhar VERGONHOSAMENTE KAKAKAKAKAKKAKAKAK</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/mcvwllxy1rbh0bl/Stardew+Valley.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -669,10 +761,16 @@
 
                     <!-- Jogo 22 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610')">
+                        </div>
+                        <h3 class="card-title error">MAL FUNCIONAMENTO</h3>
                         <h3 class="card-title">Terraria</h3>
-                        <p class="card-description">Cara, como tem gente que chama isso de <b>MINECRAFT 2D</b>???? não tem NADA  ver cara!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/fxx11xolvdm1722/Terraria%2528v1.4.4.9.v4%2529_By_RafaYoshi.rar/file" class="select-btn">
+                        <p class="card-description">Cara, como tem gente que chama isso de <b>MINECRAFT 2D</b>???? não
+                            tem NADA ver cara!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/fxx11xolvdm1722/Terraria%2528v1.4.4.9.v4%2529_By_RafaYoshi.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -680,10 +778,16 @@
 
                     <!-- Jogo 23 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000047973/745538c3639a379f6124349c298e94d6a972a554d1e754ace8b04d4566f508e8')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000047973/745538c3639a379f6124349c298e94d6a972a554d1e754ace8b04d4566f508e8')">
+                        </div>
+                        <h3 class="card-title error">MAL FUNCIONAMENTO</h3>
                         <h3 class="card-title">Cult of the Lamb</h3>
-                        <p class="card-description">Caraca, uma ovelha que é uma ovelha de um culto que sai para pegar almas e realizar um ritua- PERA AI!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/t2xgyjiav6hczwo/Cult_of_The_Lamb_1.2.2_%252864155%2529_win_gog.torrent/file" class="select-btn">
+                        <p class="card-description">Caraca, uma ovelha que é uma ovelha de um culto que sai para pegar
+                            almas e realizar um ritua- PERA AI!!!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/t2xgyjiav6hczwo/Cult_of_The_Lamb_1.2.2_%252864155%2529_win_gog.torrent/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -691,10 +795,15 @@
 
                     <!-- Jogo 24 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://buckshotroulette.com/data/image/posts/buckshot-roulette-banner.jpg')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://buckshotroulette.com/data/image/posts/buckshot-roulette-banner.jpg')">
+                        </div>
                         <h3 class="card-title">Buckshot Roulette</h3>
-                        <p class="card-description">Eu não sei como que joga isso, mas o que eu sei é que é bom, então já é o bastante :D</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/udxr6209k4gakg5/Buckshot+Roulette+v1.0+-+APK+World.rar/file" class="select-btn">
+                        <p class="card-description">Eu não sei como que joga isso, mas o que eu sei é que é bom, então
+                            já é o bastante :D</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/udxr6209k4gakg5/Buckshot+Roulette+v1.0+-+APK+World.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -702,10 +811,16 @@
 
                     <!-- Jogo 25 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://image.api.playstation.com/vulcan/img/rnd/202111/3019/Btg9YJMDRcWgsbD5E6rOcdT5.jpg?w=440')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://image.api.playstation.com/vulcan/img/rnd/202111/3019/Btg9YJMDRcWgsbD5E6rOcdT5.jpg?w=440')">
+                        </div>
+                        <h3 class="card-title error">MAL FUNCIONAMENTO</h3>
                         <h3 class="card-title">The sims 4</h3>
-                        <p class="card-description">Ta, é isso, só um simulador de vida monótona, quer mais o que? poh, já é um milagre conseguir morrer nisso!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/zdgd6z2a2xmf74f/Updater_The_Sims_4_%252B_todas_as_DLCs_-_APK_World.zip/file" class="select-btn">
+                        <p class="card-description">Ta, é isso, só um simulador de vida monótona, quer mais o que? poh,
+                            já é um milagre conseguir morrer nisso!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/zdgd6z2a2xmf74f/Updater_The_Sims_4_%252B_todas_as_DLCs_-_APK_World.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -713,10 +828,16 @@
 
                     <!-- Jogo 26 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000076/d78049b5e6bfc2b0a92237a5463910856bdb5a549773a68f60ea21c632ae7c63')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000076/d78049b5e6bfc2b0a92237a5463910856bdb5a549773a68f60ea21c632ae7c63')">
+                        </div>
+                        <h3 class="card-title error">TORRENT</h3>
                         <h3 class="card-title">The Bidding of Isaac</h3>
-                        <p class="card-description">Caraca, esse jogo que deu uns traumas psicológicos que eu vou acabar levando para a vida...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/oncxcrk0bmzgzi2/The.Binding.of.Isaac.Afterbirth.All.DLC.rar/file" class="select-btn">
+                        <p class="card-description">Caraca, esse jogo que deu uns traumas psicológicos que eu vou acabar
+                            levando para a vida...</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/oncxcrk0bmzgzi2/The.Binding.of.Isaac.Afterbirth.All.DLC.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -724,10 +845,15 @@
 
                     <!-- Jogo 27 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000014141/e3549b645ea3dc77411280ba4a83f018235bbdb6f0b32039a5519cee985f0f4f')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000014141/e3549b645ea3dc77411280ba4a83f018235bbdb6f0b32039a5519cee985f0f4f')">
+                        </div>
                         <h3 class="card-title">Untitled Goose Game</h3>
-                        <p class="card-description">Um ganso que sai por ai atormentando geral e causando o caos... cara... tem algo mais divertido que isso???</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/fj1kw19wf2hw8co/Untitled.Goose.Game.rar/file" class="select-btn">
+                        <p class="card-description">Um ganso que sai por ai atormentando geral e causando o caos...
+                            cara... tem algo mais divertido que isso???</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/fj1kw19wf2hw8co/Untitled.Goose.Game.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -735,10 +861,15 @@
 
                     <!-- Jogo 28 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMio2MoxGEGVRWVjCNGTd9mnG5DZMFoLO6Bg&s')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMio2MoxGEGVRWVjCNGTd9mnG5DZMFoLO6Bg&s')">
+                        </div>
                         <h3 class="card-title">UNO</h3>
-                        <p class="card-description">UNO!!! Enquanto você ganha as partidas, você leva de brinde um conjunto de inimigos mortais que farão de tudo para te fazer desistir da vida!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/v5yuz847v0v7o31/UNO.Build.9377745.zip/file" class="select-btn">
+                        <p class="card-description">UNO!!! Enquanto você ganha as partidas, você leva de brinde um
+                            conjunto de inimigos mortais que farão de tudo para te fazer desistir da vida!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/v5yuz847v0v7o31/UNO.Build.9377745.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -746,10 +877,15 @@
 
                     <!-- Jogo 29 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWMyCmWWCJNmppRRMWZgz88J4mnSQal9GiQ&s')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWMyCmWWCJNmppRRMWZgz88J4mnSQal9GiQ&s')">
+                        </div>
                         <h3 class="card-title">Dead Cells</h3>
-                        <p class="card-description">Para resumir, esse é um jogo que você vai passar mais tempo admirando o trabalho do que realmente jogando, ou seja... <b>CINEMA</b>!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/64bi67ysgns2n6n/D%D1%94%C3%A5%C4%91+%C4%8C%D1%94%C4%BC%C4%BC%C5%9F.rar/file" class="select-btn">
+                        <p class="card-description">Para resumir, esse é um jogo que você vai passar mais tempo
+                            admirando o trabalho do que realmente jogando, ou seja... <b>CINEMA</b>!!!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/64bi67ysgns2n6n/D%D1%94%C3%A5%C4%91+%C4%8C%D1%94%C4%BC%C4%BC%C5%9F.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -757,10 +893,14 @@
 
                     <!-- Jogo 30 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_PleaseDontTouchAnything_image1600w.jpg')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_PleaseDontTouchAnything_image1600w.jpg')">
+                        </div>
                         <h3 class="card-title">Please, don't touch anything</h3>
-                        <p class="card-description">EU FALEI PRA VOCÊ NÃO TOCAR EM NADA, NÃO FALEI? PARE DE ENCOSTAR NO CHÃO!!!</p>
-                        <a target="_blank" href="https://drive.google.com/file/d/1ahZ1SBi_cz4PG5_SzEq5u--cCVnlIcJP/view" class="select-btn">
+                        <p class="card-description">EU FALEI PRA VOCÊ NÃO TOCAR EM NADA, NÃO FALEI? PARE DE ENCOSTAR NO
+                            CHÃO!!!</p>
+                        <a target="_blank" href="https://drive.google.com/file/d/1ahZ1SBi_cz4PG5_SzEq5u--cCVnlIcJP/view"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -768,10 +908,15 @@
 
                     <!-- Jogo 31 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252')">
+                        </div>
                         <h3 class="card-title">Celeste</h3>
-                        <p class="card-description">Mano, esse é o tipo de jogo que você vai ficar horas passando raiva em uma fase, POR ISSO ELE É MAGNÍFICO!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/t1zoba5kgi6awnx/Celeste+-+APK+World.rar/file" class="select-btn">
+                        <p class="card-description">Mano, esse é o tipo de jogo que você vai ficar horas passando raiva
+                            em uma fase, POR ISSO ELE É MAGNÍFICO!!!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/t1zoba5kgi6awnx/Celeste+-+APK+World.rar/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -779,21 +924,31 @@
 
                     <!-- Jogo 32 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/iYtDJTQt3k8G_zoI0utZkG-O5cGEj8eIchlo6p5ZLP0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QllUaGxNemxo/WVRndFpqTTFPQzAw/TWpKaUxXRXpZbVV0/TUdRM1lqY3lPVFEw/T0dNelhrRXlYa0Zx/Y0djQC5qcGc')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/iYtDJTQt3k8G_zoI0utZkG-O5cGEj8eIchlo6p5ZLP0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QllUaGxNemxo/WVRndFpqTTFPQzAw/TWpKaUxXRXpZbVV0/TUdRM1lqY3lPVFEw/T0dNelhrRXlYa0Zx/Y0djQC5qcGc')">
+                        </div>
+                        <h3 class="card-title error">MAL FUNCIONAMENTO</h3>
                         <h3 class="card-title">Roller Coaster Tycoon - Classic</h3>
-                        <p class="card-description">Um clássico, da nem pra fazer piada com esse jogo, tudo nele é perfeito... GRÁFICO NÃO CONTA, O QUE CONTA É A JOGABILIDADE, CALADO ENZO GABRIEL!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/6dhqahuwkb5zyd7/RollerCoaster+Tycoon+Classic.zip/file" class="select-btn">
+                        <p class="card-description">Um clássico, da nem pra fazer piada com esse jogo, tudo nele é
+                            perfeito... GRÁFICO NÃO CONTA, O QUE CONTA É A JOGABILIDADE, CALADO ENZO GABRIEL!!!</p>
+                        <a target="_blank"
+                            href="https://www.mediafire.com/file/6dhqahuwkb5zyd7/RollerCoaster+Tycoon+Classic.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
-                        </div>
+                    </div>
 
                     <!-- Jogo 33 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/TdBcZyH3i_uCuBtzTRCRW53G2DPgcGDmtBvI6R5rJxo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaGFy/ZWQuZmFzdGx5LnN0/ZWFtc3RhdGljLmNv/bS9zdG9yZV9pdGVt/X2Fzc2V0cy9zdGVh/bS9hcHBzLzMxOTUx/MC9oZWFkZXIuanBn/P3Q9MTY2Njg4OTI1/MQ')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/TdBcZyH3i_uCuBtzTRCRW53G2DPgcGDmtBvI6R5rJxo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaGFy/ZWQuZmFzdGx5LnN0/ZWFtc3RhdGljLmNv/bS9zdG9yZV9pdGVt/X2Fzc2V0cy9zdGVh/bS9hcHBzLzMxOTUx/MC9oZWFkZXIuanBn/P3Q9MTY2Njg4OTI1/MQ')">
+                        </div>
                         <h3 class="card-title">Five Nights At Freddy's 1</h3>
-                        <p class="card-description">Hmmmmmmmm, sinceramente eu não acho um jogo muito difícil, mas a curstom night é interessante</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/j0w13axg73lkn9n/Fnaf1.exe/file" class="select-btn">
+                        <p class="card-description">Hmmmmmmmm, sinceramente eu não acho um jogo muito difícil, mas a
+                            curstom night é interessante</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/j0w13axg73lkn9n/Fnaf1.exe/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -801,10 +956,13 @@
 
                     <!-- Jogo 34 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/vXFAQn6hH1TppAKdkJjXtUM9fB-EbmH5io8xER_UI-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubGF1bmNoYm94/LWFwcC5jb20vZjg2/NGQzMGEtMDM1MS00/MGFlLWIzYzItMjc0/NTE3ZDg0NWJjLmpw/Zw')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/vXFAQn6hH1TppAKdkJjXtUM9fB-EbmH5io8xER_UI-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubGF1bmNoYm94/LWFwcC5jb20vZjg2/NGQzMGEtMDM1MS00/MGFlLWIzYzItMjc0/NTE3ZDg0NWJjLmpw/Zw')">
+                        </div>
                         <h3 class="card-title">Five Nights At Freddy's 2</h3>
                         <p class="card-description">O próprio <b>INFERNO</b> na forma de um jogo...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/qwuys6o3v65w0i9/Fnaf2.exe/file" class="select-btn">
+                        <a target="_blank" href="https://www.mediafire.com/file/qwuys6o3v65w0i9/Fnaf2.exe/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -812,10 +970,14 @@
 
                     <!-- Jogo 35 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/3FbNIrlmifDtkPrgOssGMoEMa_iCSLs7wUgA9Y3mHXw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS8zNy8y/OC9pbmVKczgucG5n')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/3FbNIrlmifDtkPrgOssGMoEMa_iCSLs7wUgA9Y3mHXw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS8zNy8y/OC9pbmVKczgucG5n')">
+                        </div>
                         <h3 class="card-title">Five Nights At Freddy's 3</h3>
-                        <p class="card-description">Ao contrário do 2, esse é simplesmente o jogo mais fácil de toda a franquia, da pra passar de todas as noites em apenas 1 dia sem levar nenhum susto.</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/3h72phlrzyyojjx/Fnaf3.exe/file" class="select-btn">
+                        <p class="card-description">Ao contrário do 2, esse é simplesmente o jogo mais fácil de toda a
+                            franquia, da pra passar de todas as noites em apenas 1 dia sem levar nenhum susto.</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/3h72phlrzyyojjx/Fnaf3.exe/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -823,10 +985,13 @@
 
                     <!-- Jogo 36 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/wSY2ObIc9e4ImA-rNRnl-Js0RFoSlNuS4PH_b_v374I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvZml2/ZS1uaWdodHMtYXQt/ZnJlZGR5cy00LTNt/ZmFyOHYyOGF0Nzl1/dXouanBn')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/wSY2ObIc9e4ImA-rNRnl-Js0RFoSlNuS4PH_b_v374I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvZml2/ZS1uaWdodHMtYXQt/ZnJlZGR5cy00LTNt/ZmFyOHYyOGF0Nzl1/dXouanBn')">
+                        </div>
                         <h3 class="card-title">Five Nights At Freddy's 4</h3>
                         <p class="card-description">Eu ainda acho que o ventilador vai me matar...</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/v7hnstk6sf37mp6/fnaf4.zip/file" class="select-btn">
+                        <a target="_blank" href="https://www.mediafire.com/file/v7hnstk6sf37mp6/fnaf4.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -834,10 +999,13 @@
 
                     <!-- Jogo 37 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/00FJhRayT-TXoF97zEKiRfXTjNjQJom31luJCr6tYlc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmludGVuZG8u/Y29tL2ltYWdlL3Vw/bG9hZC9mX2F1dG8v/cV9hdXRvL2Rwcl8x/LjUvc3RvcmUvc29m/dHdhcmUvc3dpdGNo/LzcwMDEwMDAwMDI2/MjIzL2FmYjRmZDE2/MjE1ZTgxYWQyNjNh/ZjY2ZmZhNmMzZTM4/NDA5MmJlZjBkMzc0/MmIyZjIyN2IzNWJj/NjBmYTE4OWI')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/00FJhRayT-TXoF97zEKiRfXTjNjQJom31luJCr6tYlc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmludGVuZG8u/Y29tL2ltYWdlL3Vw/bG9hZC9mX2F1dG8v/cV9hdXRvL2Rwcl8x/LjUvc3RvcmUvc29m/dHdhcmUvc3dpdGNo/LzcwMDEwMDAwMDI2/MjIzL2FmYjRmZDE2/MjE1ZTgxYWQyNjNh/ZjY2ZmZhNmMzZTM4/NDA5MmJlZjBkMzc0/MmIyZjIyN2IzNWJj/NjBmYTE4OWI')">
+                        </div>
                         <h3 class="card-title">Fnaf Sister Location</h3>
                         <p class="card-description">"Hello <b>Exotic Butters</b>, how are you?"</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/e5vw1fjoa18aok0/FnafSL.exe/file" class="select-btn">
+                        <a target="_blank" href="https://www.mediafire.com/file/e5vw1fjoa18aok0/FnafSL.exe/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -845,10 +1013,15 @@
 
                     <!-- Jogo 38 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/oV5oX01GoLojlEsSGcPVwM61YLOweQFvk7Pf51O-G-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aXRjaC56b25lL2FX/MW5Memd6TURJek16/UXVhbkJuL29yaWdp/bmFsL2JCb1VtRC5q/cGc')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/oV5oX01GoLojlEsSGcPVwM61YLOweQFvk7Pf51O-G-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aXRjaC56b25lL2FX/MW5Memd6TURJek16/UXVhbkJuL29yaWdp/bmFsL2JCb1VtRC5q/cGc')">
+                        </div>
                         <h3 class="card-title">Fnaf Pizzaria Simulator</h3>
-                        <p class="card-description">CRIE UMA PIZZARIA SUPER LEGAL <sup><del>não confie nele!</del></sup> E TENHA ANIMATRONICS SUPER DIVERTIDOS PARA ALEGRAR <sup><del>matar</del></sup> AS <b>CRIANÇAS</b></p>
-                        <a target="_blank" href="https://www.mediafire.com/file/91l9bm4ukak29i8/FnafPS.exe/file" class="select-btn">
+                        <p class="card-description">CRIE UMA PIZZARIA SUPER LEGAL <sup><del>não confie nele!</del></sup>
+                            E TENHA ANIMATRONICS SUPER DIVERTIDOS PARA ALEGRAR <sup><del>matar</del></sup> AS
+                            <b>CRIANÇAS</b></p>
+                        <a target="_blank" href="https://www.mediafire.com/file/91l9bm4ukak29i8/FnafPS.exe/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -856,10 +1029,13 @@
 
                     <!-- Jogo 39 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/xk7ofHaTZkxySD43aV6HU88dGWzljMn3KtGI8F_6TnI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF5/Z2FtYS5jb20vY2Ru/LWNnaS9pbWFnZWRl/bGl2ZXJ5L0xOMlMt/NHAzLUdnWnZFeDNJ/UGFLVUEvZmI1Y2Vl/YjktMDU5My00OGMz/LWZiMTYtYzVlNTM0/Yzg0NTAwL2VubGFy/Z2Vk')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/xk7ofHaTZkxySD43aV6HU88dGWzljMn3KtGI8F_6TnI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF5/Z2FtYS5jb20vY2Ru/LWNnaS9pbWFnZWRl/bGl2ZXJ5L0xOMlMt/NHAzLUdnWnZFeDNJ/UGFLVUEvZmI1Y2Vl/YjktMDU5My00OGMz/LWZiMTYtYzVlNTM0/Yzg0NTAwL2VubGFy/Z2Vk')">
+                        </div>
                         <h3 class="card-title">Fnaf Ultimate Custom Night</h3>
                         <p class="card-description">EU DUVIDO VOCÊ PASSAR DO <b>ALL 20</b>!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/jgr8mvh67wmf2ha/FnafUCN.exe/file" class="select-btn">
+                        <a target="_blank" href="https://www.mediafire.com/file/jgr8mvh67wmf2ha/FnafUCN.exe/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
@@ -867,15 +1043,19 @@
 
                     <!-- Jogo 40 -->
                     <div class="device-card" data-title="" data-description="">
-                        <div class="game-image" style="background-image: url('https://imgs.search.brave.com/BrHkisiDhcklfyJVRL01tpGptHRiHtHZNaZPtL4t4QE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraXRpZGUu/bmV0L2dvbGRpZWVu/dGVydGFpbm1lbnR3/aWtpL3RodW1iLzIv/MjcvS2lwMS5wbmcv/MzAwcHgtS2lwMS5w/bmc')"></div>
+                        <div class="game-image"
+                            style="background-image: url('https://imgs.search.brave.com/BrHkisiDhcklfyJVRL01tpGptHRiHtHZNaZPtL4t4QE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraXRpZGUu/bmV0L2dvbGRpZWVu/dGVydGFpbm1lbnR3/aWtpL3RodW1iLzIv/MjcvS2lwMS5wbmcv/MzAwcHgtS2lwMS5w/bmc')">
+                        </div>
                         <h3 class="card-title">Fnaf The Killer In Purple</h3>
-                        <p class="card-description">Seja o próprio <b>William Afton</b>, pense como ele, aja como ele, <b>MATE</b> COMO ELE!!!</p>
-                        <a target="_blank" href="https://www.mediafire.com/file/44go25rwdra8upx/FnafKIP.zip/file" class="select-btn">
+                        <p class="card-description">Seja o próprio <b>William Afton</b>, pense como ele, aja como ele,
+                            <b>MATE</b> COMO ELE!!!</p>
+                        <a target="_blank" href="https://www.mediafire.com/file/44go25rwdra8upx/FnafKIP.zip/file"
+                            class="select-btn">
                             <span>Baixar</span>
                             <i class="fas fa-download"></i>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </main>
@@ -939,9 +1119,9 @@
             gameCards.forEach(card => {
                 const title = normalizeText(card.getAttribute('data-title') || '');
                 const description = normalizeText(card.getAttribute('data-description') || '');
-                
+
                 const isVisible = title.includes(searchTerm) || description.includes(searchTerm);
-                
+
                 if (isVisible) {
                     card.classList.remove('hidden');
                     visibleCount++;
@@ -952,7 +1132,7 @@
 
             // Atualizar contador
             gameCount.textContent = visibleCount;
-            
+
             // Mostrar/esconder mensagem de "nenhum resultado"
             if (visibleCount === 0 && searchTerm.length > 0) {
                 noResults.classList.add('visible');
@@ -972,7 +1152,7 @@
 
         // Event listeners
         searchInput.addEventListener('input', performSearch);
-        searchInput.addEventListener('keyup', function(e) {
+        searchInput.addEventListener('keyup', function (e) {
             if (e.key === 'Escape') {
                 clearSearch();
             }
@@ -990,8 +1170,8 @@
         performSearch();
 
         // Adicionar animação suave aos cards quando aparecem/desaparecem
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
                 if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                     const card = mutation.target;
                     if (card.classList.contains('hidden')) {
@@ -1011,5 +1191,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>
